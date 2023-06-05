@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ananta",
+  "version": "${version}",
+  "name": "Ananta",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/ritomg/Anantananta-Client"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/ananta/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.anons.ananta.client.AnantaClient"
+    ],
+    "main": [
+      "com.anons.ananta.Ananta"
+    ]
+  },
+  "mixins": [
+    "ananta.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
