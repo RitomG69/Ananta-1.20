@@ -1,13 +1,16 @@
 package com.anons.ananta;
 
-import net.fabricmc.api.ModInitializer;
+import com.anons.ananta.gui.ClickGui;
+import com.anons.ananta.modmanager.ModsManager;
+import net.fabricmc.api.ClientModInitializer;
 
-public class Ananta implements ModInitializer {
-    /**
-     * Runs the mod initializer.
-     */
+public class Ananta implements ClientModInitializer {
+
+    public static String modName = "Ananta";
+    public static ClickGui clickGui;
     @Override
-    public void onInitialize() {
-
+    public void onInitializeClient() {
+        ModsManager.init();
+        clickGui = new ClickGui();
     }
 }
